@@ -1,4 +1,4 @@
-Linux kernel
+B-Jaguar
 ============
 
 There are several guides for kernel developers and users. These guides can
@@ -16,3 +16,71 @@ several of them using the reStructuredText markup notation.
 Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
+
+# Getting Started
+
+### Prerequisites
+
+- GCC or Clang toolchain
+- GNU Make
+- Git
+- (Optional) QEMU or a compatible VM for testing
+
+### Building the Kernel
+
+```sh
+git clone https://github.com/MistyPigeon/B-Jaguar.git
+cd B-Jaguar
+make defconfig    # or your preferred configuration
+make -j$(nproc)
+```
+
+### Running in QEMU
+
+```sh
+qemu-system-x86_64 -kernel arch/x86/boot/bzImage
+```
+
+*Adjust for your architecture and initrd as needed.*
+
+---
+
+## Documentation
+
+- Please see the [Documentation](./Documentation) directory for subsystem and developer guides.
+- Refer to the `CREDITS`, `COPYING`, and `MAINTAINERS` files for contributors and licensing details.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please follow the code style enforced by the project's formatting tools. See the `MAINTAINERS` file for information on how to contact subsystem maintainers.
+
+### To submit a patch:
+
+1. Fork the repository and create your branch.
+2. Make your changes.
+3. Ensure your code passes formatting and linting checks.
+4. Submit a pull request with a clear description.
+
+---
+
+## License
+
+See the `COPYING` file for license details.
+
+---
+
+## Credits
+
+See the `CREDITS` file for a list of contributors and acknowledgments.
+
+---
+
+## Contact
+
+For questions or support, please open an issue or contact the maintainer at [MistyPigeon](https://github.com/MistyPigeon).
+
+## Issue and contact policy
+
+If you do want to open an issue than make sure your issue doesnt have ANY profanity that is not allowed on GitHub (Crude humour is allowed) and for contacting me you must make sure your discussion (or whatever its called) starts with "BB;" and ends with "NoBot-bus-man-gpt4.o"
