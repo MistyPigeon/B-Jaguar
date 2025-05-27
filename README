@@ -52,11 +52,11 @@ qemu-system-x86_64 -kernel arch/x86/boot/bzImage
 
 ---
 
-## Contributing
+# Contributing 
 
 Contributions are welcome! Please follow the code style enforced by the project's formatting tools. See the `MAINTAINERS` file for information on how to contact subsystem maintainers.
 
-### To submit a patch:
+## To submit a patch:
 
 1. Fork the repository and create your branch.
 2. Make your changes.
