@@ -7,14 +7,18 @@
  * Sorted alphabetically.
  */
 
+#include "auxiliary.c"
 #include "blk.c"
 #include "bug.c"
 #include "build_assert.c"
 #include "build_bug.c"
+#include "clk.c"
+#include "cpufreq.c"
 #include "cpumask.c"
 #include "cred.c"
 #include "device.c"
 #include "dma.c"
+#include "drm.c"
 #include "err.c"
 #include "fs.c"
 #include "io.c"
